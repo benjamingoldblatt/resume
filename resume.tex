@@ -1,0 +1,117 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Benjamin Goldblatt}}\\
+	Moraga, California $\cdot$ benjamingoldblatt88@gmail.com $\cdot$ 510-210-2328 $\cdot$ https://www.linkedin.com/in/ben-goldblatt-06249720b/\\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{University of California, Los Angeles}\hfill Los Angeles, CA\\
+B. Eng., Double major in Computer Science and Applied Math \textit{GPA: 4.0} \hfill 2020 - 2024\\
+\vspace{2mm}
+
+\header{Skills}
+\begin{tabular}{ l l }
+	Languages:         & C++, Python, Lisp, Javascript, Bash                               \\
+	Recent Coursework: & CS 180, Stats 100A, CS M51A, CS 35L, CS 33, Math 131A, Physics 1C \\
+\end{tabular}
+\vspace{2mm}
+
+\header{Projects}
+{\textbf{Game Website}} {\sl React, Javascript, Mongoose, Express, Node} \hfill https://github.com/QxLyds/CS35L-Website\\
+Developed MERN web app for CS35L group project. Features include search bar, persisted users, and pages for profile, forums, news, and popular games.\\
+\vspace*{2mm}
+{\textbf{Connect N}} {\sl C++, Linux} \hfill https://github.com/benjamingoldblatt/CS32-Project3\\
+Created Connect N game where people or computers can play connect 4 with customized parameters. Implemented smart player that chooses best possible move through min-max algorithm.\\
+\vspace*{2mm}
+
+\header{Awards}
+\textbf{National AP Scholar} \hfill College Board\\
+For AP\textquotesingle{}s, earned maximum score of 5 for 11 tests. \hfill 2019\\
+\vspace*{2mm}
+
+%==== Experience ====%
+\header{Work Experience}
+\vspace{1mm}
+
+\textbf{Tilden Park Golf Course} \hfill Berkeley, CA\\
+\textit{Outside Services} \hfill October 2020 - Sep 2021\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Worked on operations outside the club house, such as range, carts, and check-in area.
+\end{itemize}
+
+\ 
+\end{document}
